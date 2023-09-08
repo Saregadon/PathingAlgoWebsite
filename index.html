@@ -3,10 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title> 
+    <style>
+        #space {
+            width: 250px;
+            height: 100px;
+            overflow: auto;
+            margin: auto;
+        }
+        #content{
+            height: 300px;
+            padding: 10px;
+            background-color: green;
+            color: white;
+        }
+    </style>
+    <title>
+        Button Object
+    </title> 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <p>
+    Click the button to change the text inside.
+    </p>
+    <button type = "button" id = "btn" onclick = "button()">
+    
+    </button>
+    <br><br>
+    <div id ="space">
+        <div id = "content">
+            Text content...
+        </div>
+    </div>
     <script src="index.js"></script>
+    <script>
+        function button(){
+            let doc = document.getElementById("btn")
+
+            let x = doc.scrollHeight;
+            document.getElementById("p").innerHTML
+                = "Height: " + x + "px";
+        }
+    </script>
 </body>
 </html>
