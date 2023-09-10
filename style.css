@@ -1,0 +1,44 @@
+#space {
+    width: 50vw;
+    height: 30vh;
+    overflow: auto;
+    margin: auto;
+}
+#content{
+    height: 300px;
+    padding: 10px;
+    background-color: green;
+    color: white;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 5px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/*defines specific borders*/
+.box:nth-child(3n) {
+    border-right: none; /* Remove the right border for every 3rd box in a row */
+}
+
+.box:nth-child(-n+3) {
+    border-top: none; /* Remove the top border for the first 3 boxes in the first row */
+}
+
+.box:nth-child(7),
+.box:nth-child(8),
+.box:nth-child(9) {
+    border-bottom: none; /* Remove the bottom border for the last 3 boxes in the last row */
+}
