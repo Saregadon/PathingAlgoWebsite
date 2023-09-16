@@ -1,0 +1,21 @@
+.leftdiv{
+    float: right;
+}
+
+.middlediv{
+    float: middle;
+}
+
+.rightdiv{
+    float: left;
+}
+
+div{
+    /*Centers the Div*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+    /*Has Background Color be Light Blue to mimic Twitter*/
+    background-color: lightblue; 
+}
